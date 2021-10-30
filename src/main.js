@@ -1,5 +1,8 @@
 import { createApp } from 'vue'
-import App from './App.vue'
-import './assets/style/tailwind.postcss'
+import App from '@/App.vue'
+import router from '@/router/index';
+import '@/assets/style/tailwind.postcss'
 
-createApp(App).mount('#app')
+createApp(App)
+  .use(router)
+  .mount('#app')
