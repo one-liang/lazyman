@@ -6,12 +6,12 @@ const router = createRouter({
     {
       path: '/',
       name: 'Home',
-      component: () => import('@/view/Home.vue'),
+      component: () => import('@/page/Home.vue'),
     },
     {
       path: '/about',
       name: 'About',
-      component: () => import('@/view/About.vue'),
+      component: () => import('@/page/About.vue'),
     },
   ],
   scrollBehavior() {
